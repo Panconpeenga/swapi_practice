@@ -92,12 +92,14 @@ class DataCard extends Component {
             <li>Classification: {data.classification}</li>
             <li>Designation: {data.designation}</li>
             <li>Height: {data.average_height}</li>
-            <li>Lifespan: {data.lifespan}</li>
+            <li>Lifespan: {data.average_lifespan}</li>
             <li>Eye Color: {data.eye_colors}</li>
             <li>Hair Color: {data.hair_colors}</li>
             <li>Skin Color: {data.skin_colors}</li>
             <li>Language: {data.language}</li>
-            <li>Homeworld: {data.homeworld}</li>
+            {
+              // <li>Homeworld: {data.homeworld}</li>
+            }
           </ul>
         </div>
         )

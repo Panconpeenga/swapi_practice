@@ -46,6 +46,15 @@ class Card extends Component {
       })
     }
 
+    let moreButton, backButton;
+      if(selection.next){
+      moreButton = <button onClick={()=>{this.props.changeCategory(selection.next,category)}} className='pointer'>More {category}</button>
+    }
+
+    if(selection.previous){
+    backButton = <button onClick={()=>{this.props.changeCategory(selection.previous,category)}} className='pointer'>Back</button>
+  }
+
   return (
     <div className='cf ph2-ns'>
       <div className='fl w-100 w-50-ns pa2 mt4'>
@@ -53,6 +62,7 @@ class Card extends Component {
           <ul className='list pl0'>
             {dataArr}
           </ul>
+          {backButton}  {moreButton}
       </div>
       <div className='fl w-100 w-50-ns pa2 mt5'>
         {this.props.cardLoaded === true?

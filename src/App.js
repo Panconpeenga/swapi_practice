@@ -35,7 +35,8 @@ class App extends Component {
         url:'https://swapi.co/api/',
         category: '',
         selection: [],
-        cardLoaded: false
+        cardLoaded: false,
+        nextUrl: ''
       }
     }
 
@@ -69,7 +70,7 @@ class App extends Component {
         <Navbar changeCategory={this.changeCategory}/>
         {this.state.url !== 'https://swapi.co/api/'?
           <div className='mw9 center ph3-ns'>
-            <Card cardLoaded={this.state.cardLoaded} selection={this.state.selection} category={this.state.category} onCardChange={this.onCardChange}/>
+            <Card changeCategory={this.changeCategory} cardLoaded={this.state.cardLoaded} selection={this.state.selection} category={this.state.category} onCardChange={this.onCardChange}/>
           </div>
           : <CardHome />}
       </div>
