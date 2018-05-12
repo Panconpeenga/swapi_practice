@@ -48,11 +48,11 @@ class Card extends Component {
 
     let moreButton, backButton;
       if(selection.next){
-      moreButton = <button onClick={()=>{this.props.changeCategory(selection.next,category)}} className='white bg-black ba b--white pointer'>More {category}</button>
+      moreButton = <button onClick={()=>{this.props.changeCategory(selection.next,category,true)}} className='white bg-black ba b--white pointer'>More {category}</button>
     }
 
     if(selection.previous){
-    backButton = <button onClick={()=>{this.props.changeCategory(selection.previous,category)}} className='white bg-black ba b--white pointer'>Back</button>
+    backButton = <button onClick={()=>{this.props.changeCategory(selection.previous,category,true)}} className='white bg-black ba b--white pointer'>Back</button>
   }
 
   return (

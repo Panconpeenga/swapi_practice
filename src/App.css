@@ -1,5 +1,13 @@
+@font-face {
+font-family: 'GeogrotesqueStencil A Bd Italic Regular';
+font-style: normal;
+font-weight: normal;
+src: local('GeogrotesqueStencil A Bd Italic Regular'), url('GeogrotesqueStencilA-BdItalic.woff') format('woff');
+}
+
 .App {
   text-align: center;
+  font-family: 'GeogrotesqueStencil A Bd Italic Regular'
 }
 
 .particles {
@@ -10,6 +18,7 @@
   left: 0;
   z-index: -1;
 }
+
 
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;

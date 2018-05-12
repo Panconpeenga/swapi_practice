@@ -40,8 +40,8 @@ class App extends Component {
       }
     }
 
-  changeCategory = (url, category) => {
-    this.setState({url: url, category: category, cardLoaded: false}, () => this.getInfo())
+  changeCategory = (url, category, cardLoaded) => {
+    this.setState({url: url, category: category, cardLoaded: cardLoaded}, () => this.getInfo())
     }
 
   getInfo = () => {
