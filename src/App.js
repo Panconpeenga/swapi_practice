@@ -32,7 +32,7 @@ class App extends Component {
   constructor(){
     super();
       this.state= {
-        url:'https://swapi.co/api/',
+        url:'https://swapi.dev/api/',
         category: '',
         selection: [],
         cardLoaded: false,
@@ -68,7 +68,7 @@ class App extends Component {
       <div className="App" >
         <Particles className='particles' params={particlesOptions}/>
         <Navbar changeCategory={this.changeCategory}/>
-        {this.state.url !== 'https://swapi.co/api/'?
+        {this.state.url !== 'https://swapi.dev/api/'?
           <div className='mw9 center ph3-ns'>
             <Card changeCategory={this.changeCategory} cardLoaded={this.state.cardLoaded} selection={this.state.selection} category={this.state.category} onCardChange={this.onCardChange}/>
           </div>
