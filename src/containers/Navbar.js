@@ -8,7 +8,7 @@ const Navbar = ({changeCategory}) => {
         display: 'flex',
         justifyContent: 'center',
       }}>
-      <p onClick={() => changeCategory('https://swapi.dev/api/')} className='pointer pa2'>Main Database</p>
+      <p onClick={() => changeCategory('https://swapi.dev/api/')} className='pointer pa2'>Main Page</p>
       <p onClick={(url, category, cardLoaded) => changeCategory(url='https://swapi.dev/api/films/', category='films', cardLoaded=false)} className='pointer pa2'>Films</p>
       <p onClick={(url,category, cardLoaded) => changeCategory(url='https://swapi.dev/api/planets/', category='planets', cardLoaded=false)} className='pointer pa2'>Planets</p>
       <p onClick={(url, category, cardLoaded) => changeCategory(url='https://swapi.dev/api/people/', category='people', cardLoaded=false)} className='pointer pa2'>People</p>
